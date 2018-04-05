@@ -21,5 +21,5 @@ require get_template_directory() . '/lib/template-tags.php';
 update_option( 'siteurl', 'http://localhost/portfolio' );
 update_option( 'home', 'http://localhost/portfolio' );
 
-update_option( 'siteurl', 'https://muffatto-anthony.fr' );
-update_option( 'home', 'https://muffatto-anthony.fr' );
+//update_option( 'siteurl', 'https://muffatto-anthony.fr' );
+//update_option( 'home', 'https://muffatto-anthony.fr' );
