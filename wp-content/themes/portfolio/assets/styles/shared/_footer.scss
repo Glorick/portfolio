@@ -1,0 +1,64 @@
+.am-footer {
+  background: url("../pictures/shade-blue3.png");
+  //background-color: $gray-901;
+  padding: 10px 0;
+  &-container {
+    @extend .container;
+  }
+  &-row {
+    @extend .row;
+  }
+  &-description, &-social, &-contact {
+    @extend .col-sm-12, .col-md-4, .col-lg-4;
+    color: $white;
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+    h3, {
+      font-family: 'Merriweather', serif;
+      font-size: 22px;
+      font-style: normal;
+    }
+  }
+  &-social{
+    text-align: justify;
+    p {
+      padding-top: 9%;
+    }
+  }
+  &-contact {
+    @extend .col-sm-12, .col-md-2, .col-lg-2;
+    h3 {
+    text-align: center;
+    padding-top: 7%;
+    }
+    a {
+      padding-left: 7%;
+    }
+    img {
+      max-width: 45px;
+      color: blue;
+      margin: 5.5%;
+    }
+    &-send {
+      padding-left: 38%;
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  &-copyright {
+    background-color: $black;
+    padding: 15px 0;
+  }
+  &-copyright-content {
+    @extend .m-auto;
+    a, span {
+      color: $white;
+      font-style: italic;
+    }
+    span {
+      padding: 0 15px;
+    }
+  }
+}

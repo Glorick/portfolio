@@ -1,0 +1,109 @@
+.am-main {
+  margin-top: 56px;
+  &-header {
+    padding: 45px 0;
+    background: url("../pictures/shade-blue3.png");
+    //background-color: $gray-500;
+    &-container {
+    @extend .container;
+    color: $white;
+    text-shadow: $black 0.05em 0.05em 0.05em;
+    }
+    &-banner {
+      @extend .col-sm-12, .col-md-7, .col-lg-7;
+      h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 55px;
+        display: inline-block;
+        //text-shadow: $black 0.05em 0.05em 0.05em;
+      }
+      h2 {
+        font-family: 'Merriweather', serif;
+        font-size: 65px;
+        display: inline-block;
+        padding-left: 10px;
+        //text-shadow: $gray-700 0.05em 0.05em 0.05em;
+      }
+      h3 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 40px;
+        //text-shadow: $gray-700 0.05em 0.05em 0.05em;
+      }
+    }
+    &-social {
+      @extend .col-sm-12, .col-md-2, .col-lg-2;
+      a {
+        display: block;
+        margin-left: 25%;
+      }
+      img {
+        width: 100%;
+        display: block;
+        max-width: 40px;
+        color: blue;
+        margin: 10px ;
+      }
+    }
+    &-picture {
+      @extend .col-sm-12, .col-md-3, .col-lg-3;
+      img {
+      @extend .rounded-circle;
+      max-width: 220px;
+      display:inline-block;
+      margin: 0 auto;
+      }
+    }
+  }
+  &-content-top, &-content-midlle, &-content-bottom {
+    &-container {
+      @extend .container;
+      padding: 15px 0;
+    }
+    &-title {
+      text-align: center;
+      h2, p {
+        color: $white;
+      }
+      p{
+        font-size: 32px;
+      }
+    }
+  }
+  &-content-top {
+    background-color: $gray-900;
+  }
+  &-content-midlle {
+    background: url("../pictures/background-midlle.png");
+    background-size: cover;
+    //background-attachment: fixed;
+    min-height: 300px;
+
+    h2 {
+      display: inline-block;
+      padding-top: 6.5%;
+      padding-left: 20px;
+      padding-right: 50px;
+      color: $white;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 50px;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      text-align: center;
+    }
+    h3 {
+      color: $white;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 35px;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      text-align: center;
+      padding-top: 2%;
+    }
+  }
+  &-content-bottom {
+    background-color: $gray-700;
+  }
+  &-row {
+    @extend .row, .align-items-center;
+  }
+}
